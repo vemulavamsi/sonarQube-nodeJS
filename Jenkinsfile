@@ -55,7 +55,9 @@ pipeline {
         }
         stage('sonar'){
             steps{
+                withSonarQubeEnv(credentialsId: 'Sonar'){
                 sh 'npm run sonar'
+                }
             }
         }
 /*
