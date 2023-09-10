@@ -50,7 +50,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Your build steps here
-                sh 'npm install'
+                sh 'npm install -g'
             }
         }
         stage('sonar'){
