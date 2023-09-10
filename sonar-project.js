@@ -1,5 +1,4 @@
-const sonarqubeScanner = require('sonarqube-scanner');
-
+const scanner = require('sonarqube-scanner');
 sonarqubeScanner({
 	serverUrl: 'http://100.26.252.128:9000/',
 	options: {
