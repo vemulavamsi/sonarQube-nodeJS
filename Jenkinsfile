@@ -39,14 +39,14 @@ pipeline {
     tools {
         nodejs "NodeJs 20.6.1"
     }
-    stages {
-        stage ('remove npm package'){
-            steps{
-                sh "rm -rf package-lock.json"
-                sh "npm cache clean --force"
-                sh "npm uninstall -g global-package"
-            }
-        }
+    // stages {
+    //     stage ('remove npm package'){
+    //         steps{
+    //             sh "rm -rf package-lock.json"
+    //             sh "npm cache clean --force"
+    //             sh "npm uninstall -g global-package"
+    //         }
+    //     }
         stage('Build') {
             steps {
                 // Your build steps here
