@@ -36,6 +36,9 @@ node
 }*/
 pipeline {
     agent any
+    tools {
+        nodejs "NodeJs 20.6.1"
+    }
     stages {
         stage ('remove npm package'){
             steps{
