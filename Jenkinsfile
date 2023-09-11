@@ -19,7 +19,8 @@ pipeline {
         }
         stage('sonar'){
             steps{
-                sh 'npm run sonar'
+                //sh 'npm run sonar'
+                sh 'node sonar-project.js'
             }
         }
         stage('Configure npm credentials') {
