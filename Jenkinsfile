@@ -58,7 +58,7 @@ pipeline {
         stage('sonar'){
             steps{
                 script{
-                    withSonarQubeEnv(credentialsId: 'Sonar'){
+                    withSonarQubeEnv(credentialsId:'Sonar'){
                     sh 'npm run sonar'
                     }
                 }
