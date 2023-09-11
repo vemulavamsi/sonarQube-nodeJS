@@ -39,7 +39,7 @@ pipeline {
     tools {
         nodejs "NodeJs 20.6.1"
     }
-    // stages {
+     stages {
     //     stage ('remove npm package'){
     //         steps{
     //             sh "rm -rf package-lock.json"
@@ -86,6 +86,6 @@ pipeline {
         } 
         */
     }
-
+}
 
 
