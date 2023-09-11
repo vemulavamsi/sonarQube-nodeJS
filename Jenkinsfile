@@ -37,7 +37,7 @@ node
 pipeline {
     agent any
     tools {
-        nodejs "NodeJs 20.6.1"
+        nodejs "NodeJs 20.4.0"
     }
      stages {
     //     stage ('remove npm package'){
@@ -58,7 +58,7 @@ pipeline {
         stage('sonar'){
             steps{
                 script{
-                    withSonarQubeEnv(credentialsId:'Sonar'){
+                    withSonarQubeEnv(credentialsId:'sonarnew'){
                     sh 'npm run sonar'
                     }
                 }
