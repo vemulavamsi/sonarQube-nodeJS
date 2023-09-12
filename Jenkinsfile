@@ -42,7 +42,7 @@ pipeline {
            stage('Build and Publish') {
                steps {
                    // Build your Node.js project (if needed)
-                   sh 'npm run build'
+                //    sh 'npm publish'
 
                    // Publish the Node.js package to Nexus Repository
                    sh 'npm publish --registry http://100.26.159.217:8081/repository/sonarQube-nodeJS/'
