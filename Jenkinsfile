@@ -45,6 +45,7 @@ pipeline {
                 //    sh 'npm publish'
 
                    // Publish the Node.js package to Nexus Repository
+                   sh "npm install -g npm@latest"
                    sh 'npm adduser --registry=http://100.26.159.217:8081/repository/sonarQube-nodeJS/'
                    sh 'npm publish --registry http://100.26.159.217:8081/repository/sonarQube-nodeJS/'
                }
